@@ -18,6 +18,9 @@ const routes: Routes = [
             {path:"food",component:FoodComponent},
             {path:"star",component:StarComponent}
         ]
+    },
+    {
+        path:'test', loadChildren:'app/test/test.module#TestModule'
     }
 ];
 

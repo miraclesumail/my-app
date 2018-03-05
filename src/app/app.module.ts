@@ -14,7 +14,9 @@ import { AppComponent } from './app.component';
 import { HeroesComponent }    from './hero/hero.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ChinaComponent} from './china/china.component';
-import {beautyDirective} from './directive/bg.directive'
+import {beautyDirective} from './directive/bg.directive';
+
+import {CreditCardModule} from './credit-card/credit-card.module';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import {beautyDirective} from './directive/bg.directive'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CreditCardModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
