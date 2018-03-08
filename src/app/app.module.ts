@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import {HttpClientModule} from '@angular/common/http';
 import { DashboardComponent }   from './dashboard/dashboard.component';
 import { HeroService } from './hero.service';
 import { HeroDetailComponent }    from './hero-detail/hero-detail.component';
@@ -17,7 +18,6 @@ import { ChinaComponent} from './china/china.component';
 import {beautyDirective} from './directive/bg.directive';
 
 import {CreditCardModule} from './credit-card/credit-card.module';
-
 
 @NgModule({
   declarations: [
@@ -35,6 +35,7 @@ import {CreditCardModule} from './credit-card/credit-card.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     CreditCardModule
   ],
